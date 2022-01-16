@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "defs.h": "c",
+        "lexer.h": "c",
+        "parser.h": "c",
+        "cstring": "c"
+    }
+}

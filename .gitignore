@@ -1,6 +1,6 @@
 #objectfile
 *.o
-#vscode
-.vscode
+# .
+*.
 #binary
 /Verv

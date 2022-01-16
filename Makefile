@@ -1,12 +1,12 @@
 CC = gcc
-CFLAGS = 
+CFLAGS = -pedantic -Wall -std=c11
 LDFLAGS =
 
 SRC:= $(wildcard src/*.c)
 OBJ:= $(patsubst %.c, %.o, $(SRC))
 
 Verv: $(OBJ)
-	gcc -o $@ $^
+	gcc $(CFLAGS) -o $@ $^
 
 .PHONY: clean
 clean:

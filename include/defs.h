@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef _DEFS_H_
 #define _DEFS_H_
 
@@ -11,13 +13,12 @@
 
 extern int errno;
 
-void put_err() {
-    fprintf(stderr, "ERROR: %s\n", strerror(errno));
-    exit(EXIT_FAILURE);
-}
-
 typedef struct code{
     char *data;
 } code;
+
+void put_err();
+
+void code_print(code c);
 
 #endif /*_DEFS_H_*/
